@@ -1,0 +1,193 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background: black;
+    overflow-x: hidden;
+}
+
+/* 🌌 ESTRELLAS */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: gold;
+    font-weight: 900;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.social i {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url("img/fondo.jpg") center/cover;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: gold;
+    text-shadow: 0 0 20px gold;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* SECCIONES */
+.section {
+    padding: 60px 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: gold;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: linear-gradient(145deg, #0a0f2c, #0f1a4d);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+}
+
+/* ✨ EFECTO HOVER GOD */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px cyan, 0 0 40px blue;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+.card-content {
+    padding: 15px;
+}
+
+.price {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00ffea;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(90deg, gold, orange);
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 0 15px #25D366;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+/* =============================== */
+/* 🔥 MODAL CARTAS */
+/* =============================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+/* 📸 IMAGEN CONTROLADA (ARREGLADO) */
+.modal-img {
+    display: block;
+    margin: auto;
+    max-width: 300px;   /* 🔥 tamaño controlado */
+    width: 80%;
+    max-height: 80vh;   /* no se sale de la pantalla */
+    border-radius: 10px;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* ❌ BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}

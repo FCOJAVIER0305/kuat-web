@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Corporación Estelar Kuat</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<header>
+    <div class="logo">🚀 Corporación Estelar Kuat</div>
+
+    <nav>
+        <a href="#lotes">Lotes</a>
+        <a href="#cartas">Cartas</a>
+        <a href="#accesorios">Accesorios</a>
+    </nav>
+
+    <div class="social">
+        <a href="https://wa.me/56900000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <!-- ✅ SOLO ESTO SE CAMBIÓ -->
+        <a href="https://www.instagram.com/corporacion_estelar_kuat?igsh=MTh2bHZxZXd4c3kwcw==" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Domina la galaxia</h1>
+    <p>Lotes, cartas individuales y accesorios premium</p>
+</section>
+
+<main>
+
+<!-- 🔥 LOTES -->
+<section id="lotes" class="section">
+    <h2>🔥 Lotes</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/lote1.jpg">
+            <div class="card-content">
+                <h3>Lote Inicial</h3>
+                <p>50 cartas variadas</p>
+                <div class="price">$00.000</div>
+                <a href="https://wa.me/56900000000?text=Quiero%20comprar%20Lote%20Inicial" target="_blank">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/lote2.jpg">
+            <div class="card-content">
+                <h3>Lote Avanzado</h3>
+                <p>100 cartas + raras</p>
+                <div class="price">$00.000</div>
+                <a href="https://wa.me/56900000000?text=Quiero%20comprar%20Lote%20Avanzado" target="_blank">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/lote3.jpg">
+            <div class="card-content">
+                <h3>Lote Pro</h3>
+                <p>Cartas exclusivas</p>
+                <div class="price">$00.000</div>
+                <a href="https://wa.me/56900000000?text=Quiero%20comprar%20Lote%20Pro" target="_blank">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 💎 CARTAS -->
+<section id="cartas" class="section">
+    <h2>💎 Cartas Individuales</h2>
+    <div class="grid">
+
+        <div class="card carta-item">
+            <img src="img/carta1.jpg">
+            <div class="card-content">
+                <h3>Darth Vader</h3>
+                <p>Carta rara</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card carta-item">
+            <img src="img/carta2.jpg">
+            <div class="card-content">
+                <h3>Luke Skywalker</h3>
+                <p>Edición especial</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card carta-item">
+            <img src="img/carta3.jpg">
+            <div class="card-content">
+                <h3>Yoda</h3>
+                <p>Legendaria</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ⚙️ ACCESORIOS -->
+<section id="accesorios" class="section">
+    <h2>⚙️ Accesorios</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/accesorio1.jpg">
+            <div class="card-content">
+                <h3>Contador de daño</h3>
+                <p>Ideal para partidas</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/accesorio2.jpg">
+            <div class="card-content">
+                <h3>Fundas Premium</h3>
+                <p>Protección total</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/accesorio3.jpg">
+            <div class="card-content">
+                <h3>Deck Box</h3>
+                <p>Guarda tus cartas</p>
+                <div class="price">$00.000</div>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- 🔍 MODAL -->
+<div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-img" id="imgModal">
+</div>
+
+<a href="https://wa.me/56900000000" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+    © 2026 Corporación Estelar Kuat
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
